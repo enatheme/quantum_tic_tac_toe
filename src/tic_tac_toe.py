@@ -202,7 +202,7 @@ def tic_tac_toe(vector) -> str:
     try:
         qc = q_ttt(vector, '1')
         display(qc)
-        return run_it(qc, False).get_counts()
+        return run_it(qc, False).result().get_counts()
     except:
         raise
 
